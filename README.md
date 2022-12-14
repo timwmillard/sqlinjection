@@ -6,8 +6,6 @@ This is a sample project that has a deliberate SQL exploit built in.  See if you
 
 Run a command that will delete all data from the `person` table.
 
----
-
 ## Setup
 
 Setup the database and build the program.
@@ -41,8 +39,6 @@ make migrate
 make
 ```
 
----
-
 ## Run the Program
 
 This will show the available commands.
@@ -50,7 +46,6 @@ This will show the available commands.
 ```sh
 ./person
 ```
-
 
 ### Insert some data
 
@@ -71,8 +66,6 @@ This will show the available commands.
 ./person update 1 Timothy Millard
 ```
 
----
-
 ## Hack
 
-Now hack away and find the exploit.
+Now hack away and find the exploit.  And yes, you can read the source code to find the exploit.
