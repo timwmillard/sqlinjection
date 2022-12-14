@@ -61,7 +61,7 @@ func list() {
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Fprintf(os.Stderr, "Usage: %s <cmd> ...\n", os.Args[0])
+		fmt.Fprintf(os.Stderr, usage, os.Args[0])
 		os.Exit(1)
 	}
 
@@ -105,3 +105,15 @@ func dbURI() string {
 		dbName,
 	)
 }
+
+const usage = `Usage: %s <command> ...
+
+Commands:
+
+    list
+
+    create <firstname> <lastname>
+
+    update <id> <firstname> <lastname>
+
+`
